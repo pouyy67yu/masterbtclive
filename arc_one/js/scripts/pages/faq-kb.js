@@ -1,0 +1,3 @@
+$(function(){"use strict";$("#searchbar").on("keyup",function(){var value=$(this).val().toLowerCase();if(value!=""){$(".search-content-info .search-content").filter(function(){$(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);});var search_row=$(".search-content-info .search-content:visible").length;if(search_row==0){$('.search-content-info .no-result').removeClass('no-items');}
+else{if(!$('.search-content-info .no-result').hasClass('no-items')){$('.search-content-info .no-result').addClass('no-items');}}}
+else{$(".search-content-info .search-content").show();if($('.search-content-info .no-results').hasClass('no-items')){$('.search-content-info .no-results').removeClass('no-items');}}});});

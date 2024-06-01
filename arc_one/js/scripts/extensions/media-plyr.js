@@ -1,0 +1,1 @@
+$(document).ready(function(){var player=new Plyr(".video-player");var player1=new Plyr(".audio-player");});
